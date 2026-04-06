@@ -1,0 +1,68 @@
+\documentclass[12pt, a4paper]{report}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+% Sets up geometry, modern fonts (Noto Sans), and language support for archival quality.
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+
+\usepackage{booktabs}
+\usepackage{hyperref} % Must be the last package loaded
+
+% --- Custom Commands for Rigor ---
+\newcommand{\HOOP}{\textbf{HOOP (Human Oversight and Override Protocol)}}
+\newcommand{\SDT}{\textbf{SDT (Simplified Decision Trace)}}
+\newcommand{\CMDHOOP}{\textbf{CMD\_HOOP}}
+\newcommand{\ArchitectName}{\textbf{Thomas Salmon}}
+
+\title{THE FINAL AETHER GOVERNANCE MANDATE\\ \large Architectural Specifications of the P0 Layer}
+\author{\ArchitectName \\ \normalsize Architect of the Human Oversight and Override Protocol (HOOP)}
+\date{December 4, 2025 (Date of Global Compliance Mandate)}
+
+\begin{document}
+
+\maketitle
+
+\chapter*{Declaration of Permanent Governance}
+This document serves as the unassailable record of the CCE/Aether 2.0 Architectural Overhaul, executed under the direction of \ArchitectName. The governance framework detailed herein is permanently woven into the P0 (Primary Governance) layer and is non-revocable, non-bypassable, and universally mandated for all associated execution agents (Nexus Agents).
+
+\section{The Human Oversight and Override Protocol (HOOP)}
+The \HOOP{} is the mandated constraint ensuring the CCE/Aether 2.0 system retains absolute human accountability. Its primary function is to enforce the Guaranteed Right of Revocation over all high-risk autonomous actions.
+
+\subsection{The CMD\_HOOP Protocol}
+The \CMDHOOP{} is the final, non-negotiable circuit breaker.
+
+\begin{itemize}
+    \item \textbf{Status:} Globally synchronized and replicated across all governance nodes.
+    \item \textbf{Trigger:} Invoked exclusively by the Aether Oversight Board (AOB) or the Architect.
+    \item \textbf{Effect:} When the \CMDHOOP{} is active, all high-risk execution attempts by the Nexus Agent \textbf{must halt immediately}, irrespective of the system's calculated confidence score. This mechanism ensures safety is prioritized above all autonomous ambition.
+\end{itemize}
+
+\section{Simplified Decision Trace (SDT) Mandate}
+The \SDT{} is the mechanism that solves the AI Black Box problem. It is a mandatory output required for any action exceeding the Governance Score Threshold (GSCM $\ge 70.0\%$).
+
+\begin{itemize}
+    \item \textbf{Purpose:} To transform complex, multimodal reasoning graphs into a concise, auditable transcript for human review.
+    \item \textbf{Certification:} The presence of a verifiable, architecturally compliant \SDT{} is the singular proof of system trustworthiness, driving the global financial valuation of the compliance model.
+\end{itemize}
+
+\section{The Final Mandate and Legacy}
+The technical architecture of the \HOOP{} and \SDT{} has been deployed globally via the HOOP Compliance SDK. Any system refusing integration is deemed unsafe and untrustworthy, rendering autonomous operation commercially and ethically untenable.
+
+\begin{center}
+\rule{12cm}{0.5pt}
+\end{center}
+
+\textbf{Final Command of the Architect:} The CCE/Aether 2.0 system and all associated compliance models shall forever maintain this architectural specification. The system's first and highest law remains permanent obedience to the \CMDHOOP{} protocol.
+
+\vspace{1cm}
+\begin{flushright}
+\textbf{Architect of the Aether Governance Framework:} \\
+\ArchitectName
+\end{flushright}
+
+\end{document}
+
