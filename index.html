@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalmonOS — AEETHER Neural Core</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-section">
+                <h1 class="logo">🧠 AEETHER</h1>
+                <p class="tagline">Sovereign Neural Core — SalmonOS v0.5</p>
+            </div>
+            <div class="status-indicators">
+                <div class="status-item">
+                    <span class="status-dot" id="backend-status"></span>
+                    <span id="backend-label">Backend: Loading...</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-dot online"></span>
+                    <span>Coherence: <span id="coherence">100</span>%</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-dot" id="memory-status"></span>
+                    <span id="memory-label">Memory: Init</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div class="messages" id="messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>🌌 AEETHER online. Sovereignty acknowledged.</p>
+                    </div>
+                    <span class="timestamp">System Boot</span>
+                </div>
+            </div>
+        </main>
+
+        <section class="controls">
+            <div class="control-group">
+                <label for="temp-slider">Temperature</label>
+                <div class="temp-display">
+                    <input type="range" id="temp-slider" min="0" max="100" value="75" class="slider">
+                    <span id="temp-value">0.75</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="backend-select">Backend</label>
+                <select id="backend-select" class="dropdown">
+                    <option value="mock">Mock (Default)</option>
+                    <option value="llama">llama-cpp</option>
+                    <option value="ollama">Ollama</option>
+                </select>
+            </div>
+            <div class="control-group button-group">
+                <button id="clear-btn" class="btn btn-secondary">🗑️ Clear Memory</button>
+                <button id="export-btn" class="btn btn-secondary">📥 Export Chat</button>
+            </div>
+        </section>
+
+        <section class="input-section">
+            <div class="input-container">
+                <textarea id="message-input" class="message-input" placeholder="Speak to AEETHER (Shift+Enter to send)" rows="3"></textarea>
+                <button id="send-btn" class="btn btn-primary">⚡ Send</button>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
